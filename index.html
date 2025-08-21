@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <title>Blog de Notícia</title>
+
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Roboto, sans-serif;
+            background: #fafafa;
+            color: #333 ;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;   
+            padding: 3em;
+            margin: 1%;
+        }
+
+
+        nav a {
+            color: white;
+            margin-left: 0em;
+            text-decoration: underline;
+        }
+
+        .div {
+            display: flex;
+            margin: 1.5em;
+            gap: 1em;
+        }
+
+        .Nova {
+              width: 400px;
+              height: auto;
+              margin: 0 auto;  
+              flex: 3;
+              background: white;
+              padding: 1.5em;
+        }
+        
+        .Nova h2 {
+              font-size: 1.6em;
+              margin-bottom: 1em;
+        }
+
+        .Nova span {
+              background: yellow;
+              font-weight: bold;
+              padding: 0 0.3em;              
+        }
+
+        .cards {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 1em;
+              text-align: left;
+        }
+
+        .card {
+              background: white;
+              padding: 3em;
+              border: 1px solid #ddd;
+              font-weight: bold;
+        }
+      </style>
+</head>
+
+<body>
+
+
+      <header>
+          <h1>TechNews</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categorias</a>
+        </nav>
+      </header>
+
+  <div class="div">   
+    
+    <div class="Nova">
+          <h2>Grande Lançamento no Mundo da IA</h2>
+        <p>
+          <span>Destaque</span> Empresas estão lançando novas soluções baseadas em inteligência artificial.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">Notícia 1</div>
+        <div class="card">Notícia 2</div>
+    </div>
+
+  </div>
+</body>
+
+</html>
